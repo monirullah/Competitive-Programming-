@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+    string A;
+    string B;
+    cin>> A >> B;
+ 
+    int a = A.length();
+    int b = B.length();
+    int i,temp;
+ 
+    cout << a<< " " << b<<endl;
+    cout << A+B<< endl;
+ 
+    temp = A[0];
+    A[0] = B[0];
+    B[0] = temp;
+ 
+    cout << A << " " << B;
+
+return 0;
+}
