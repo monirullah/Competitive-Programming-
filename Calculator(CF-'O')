@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+    int A;
+    char C;
+    int B;
+ 
+ 
+    cin>>A>>C>>B;
+    switch(C)
+    {
+    case '+':
+        {
+           cout<< A+B;
+           break;
+        }
+    case '-':
+        {
+           cout<< A-B;
+             break;
+        }
+    case '*':
+        {
+           cout<< A*B;
+            break;
+        }
+    case '/':
+        {
+            cout<< A/B;
+ 
+        }
+    }
+ 
+    return 0;
+ 
+ 
+ 
+ 
+}
