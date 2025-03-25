@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+    int A,B,C;
+    char S,Q;
+    cin>> A>>S>>B>>Q>>C;
+ 
+    int D = A+B;
+    int E = A-B;
+    int F = A*B;
+ 
+    if(S == '+')
+    {
+        if(D == C)
+        {
+            cout << "Yes";
+        }
+ 
+        else
+        {
+            cout << D;
+ 
+        }
+ 
+ 
+ 
+    }
+ 
+    if(S == '-')
+    {
+        if(E == C)
+        {
+            cout << "Yes";
+        }
+ 
+        else
+        {
+            cout<< E;
+        }
+ 
+ 
+    }
+ 
+    if(S == '*')
+    {
+        if(F == C)
+        {
+            cout << "Yes";
+        }
+ 
+        else
+        {
+            cout << F;
+        }
+ 
+ 
+ 
+    }
+
+return 0;
+}
+ 
