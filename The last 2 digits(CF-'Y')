@@ -1,0 +1,20 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+ 
+int main()
+{
+    long long A,B,C,D;
+    cin>>A>>B>>C>>D;
+ 
+    int a= A%100;
+    int b= B%100;
+    int c= C%100;
+    int d= D%100;
+ 
+    long long multi = a*b*c*d;
+ 
+    int mult = (multi%100);
+ 
+    cout<<setw(2)<<setfill('0')<<mult<<endl;
+}
