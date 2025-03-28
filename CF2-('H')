@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,counti=0;
+    cin>>n;
+
+    if(n==1)
+    {
+        cout<< "NO";
+    }
+    for(int i =2;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            counti++;
+            break;
+        }
+
+
+    }
+
+    if(counti==0)
+    {
+        cout<< "YES";
+    }
+    else
+    {
+        cout<< "NO";
+    }
+
+}
