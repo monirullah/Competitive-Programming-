@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+ 
+using namespace std;
+ 
+int main() {
+    int N;
+    cin >> N; 
+ 
+   
+    string original = to_string(N);
+ 
+    
+    string reversed = original;
+    reverse(reversed.begin(), reversed.end());
+ 
+   
+    int reversedNum = stoi(reversed);
+ 
+   
+    cout << reversedNum << endl;
+ 
+   
+    if (to_string(reversedNum) == original) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+ 
+    return 0;
+}
+ 
