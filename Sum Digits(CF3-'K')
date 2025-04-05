@@ -1,0 +1,19 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+int main()
+{
+    int n;
+    cin>> n;
+
+    string A;
+    cin>>A;
+
+    int sum=0;
+    for (char digit : A)
+    {
+        sum = sum + (digit- '0');
+    }
+    cout<< sum<< endl;
+}
