@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+
+class logical
+{
+private:
+    bool value;
+public:
+    logical(bool v=0) : value(v) {};
+
+    bool operator  &&( logical m)
+    {
+      return value && m.value;
+    }
+
+   bool operator || (logical m)
+    {
+
+
+         return value || m.value;
+    }
+
+
+    void showvalue()
+    {
+        cout<< "Value = " << value <<  endl;
+    }
+
+
+};
+int main()
+{
+    logical a(true),b(false),c;
+    a.showvalue();
+    b.showvalue();
+    c=a && b;
+    c.showvalue();
+    c=a|| b;
+    c.showvalue();
+    c=b && a;
+    c.showvalue();
+    c=b|| a;
+    c.showvalue();
+
+}
+
